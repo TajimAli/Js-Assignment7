@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//...... Q.1 What is the syntax for the While loop in JavaScript?.......
+// In JavaScript, the while loop is used to repeatedly execute a block of code as long as a specified condition is true.
+// The basic syntax for a while loop is.
+
+// while (condition) {
+//   // code to be executed while the condition is true
+// }
+
+// .........Q.2 What is the syntax for the For loop in JavaScript?............
+// A for loop repeats until a specified condition evaluates to false.
+// The JavaScript for loop is similar to the Java and C for loop.
+// in simple word The for loop in JavaScript is another way to create loops,
+// and it is commonly used when you know in advance how many times you want the loop to iterate.
+// for (initialization; condition; afterthought){
+//     //code to be executed in each iteration
+// }
+
+// ...........Q.3 What is a nested loop in JavaScript, and why would you use one?...........
+// A composition of loops is called a nested loop. The most common type of nested loops will be one loop inside another.
+// The first loop is usually called the outer loop while the second loop is called the inner loop.
+// It allows you to iterate over elements or perform repetitive tasks within a loop, which is part of another loop. 
+// This is often used for complex iterations or working with multi-dimensional data structures.
+// Example:-
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 5; j++) {
+//     console.log(i, j);
+//   }
+// }
+
+// .........Q4. What is an infinite loop in JavaScript, and how can it be avoided?........
+// An infinite loop is a piece of code that keeps running forever as the terminating condition is never reached.
+// An infinite loop in JavaScript is a loop that continues to execute its block of code indefinitely because the loops exit condition is never met.
+// As a result, the program gets stuck in the loop, and subsequent code or actions are never executed. Infinite loops can lead to unresponsive scripts or applications.
+// Here an example of an infinite loop:
+
+// while (true) {
+//   // This block of code will run forever
+// }
+
+// so the loop will never exit.To avoid infinite loops,
+// its crucial to ensure that the loops exit condition will eventually evaluate to false. Here are some tips to prevent and detect infinite loops:
+// Double-Check Conditions:
+// Review the loop conditions to ensure that they can become false during execution.
+// Verify that any variables used in the loop conditions are updated within the loop.
+// Use Break Statements:
+// Introduce break statements within loops to explicitly exit the loop when a certain condition is met.
+
+// Example:
+// let i = 0;
+// while (true) {
+//   console.log(i);
+//   i++;
+//   if (i === 5) {
+//     break; // Exit the loop when i reaches 5
+//   }
+// }
+
+// .......Q.5 How do you break out of two nested for loops?.........
+// In JavaScript, the break statement can be used to exit out of loops, including nested loops.
+// However, the break statement alone only exits the innermost loop. If you want to break out of both the inner and outer loops,
+// you can use a labeled statement.
+// Example:
+// for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     console.log(i, j);
+
+//     if (/* some condition */) {
+//       // Use the break statement with the label to exit both loops
+//       break //outerLoop;
+//     }
+//   }
+// }
+
+
+//......Q.6 What is the difference between the break statement and the continue directive?
+// break is used to exit the entire loop prematurely.
+// break Statement:- The break statement is used to exit (terminate) a loop prematurely. When encountered, it causes the immediate exit of the loop,
+// and the program continues with the next statement after the loop.
+// Example:-
+// for (let i = 0; i < 7; i++) {
+//   console.log(i);
+//   if (i === 5) {
+//     break; // Exit the loop when i is 5
+//   }
+// }
+
+// continue Statement:-
+// continue is used to skip the rest of the code inside the loop for the current iteration and move to the next iteration.
+// The continue statement is used to skip the rest of the code inside the loop for the current iteration and move to the next iteration. It does not terminate the entire loop; instead, it skips to the next iteration.
+// Example:-
+// for (let i = 0; i < 9; i++) {
+//   if (i === 4) {
+//     continue; // Skip the rest of the code for i=4 and move to the next iteration
+//   }
+//   console.log(i);
+// }
+
+
+// ......Q.7 Can you stop a loop based on a specific condition?......
+// Yes, we can stop a loop based on a specific condition
+// Example:-
+// let i = 0;
+// do {
+//   console.log(i);
+//   if (i === 5) {
+//     // Exit the loop when i is 5
+//     break;
+//   }
+
+//   i++;
+// } while (i < 10);
+
+
+    </script>
+</body>
+</html>
